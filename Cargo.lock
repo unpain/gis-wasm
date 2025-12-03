@@ -217,6 +217,7 @@ name = "gis-wasm"
 version = "0.1.0"
 dependencies = [
  "geo",
+ "geo-types",
  "geojson",
  "serde",
  "serde_json",

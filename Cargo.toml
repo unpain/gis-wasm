@@ -11,6 +11,7 @@ wasm-opt = false
 
 [dependencies]
 geo = "0.31.0"
+geo-types = "0.7.18"
 geojson = "0.24.2"
 serde = "1.0.228"
 serde_json = "1.0.145"
