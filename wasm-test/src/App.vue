@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import __wbg_init, { get_bbox } from '@/pkg/gis_wasm'
-import wzlgGeoJson from '@/assets/test.json'
+import * as turf from '@turf/turf'
+import wzlgGeoJson from '@/assets/ch.json'
 onMounted(async () => {
   await __wbg_init()
 })
 const calc = () => {
   const time = performance.now()
-  get_bbox(JSON.stringify(wzlgGeoJson))
+  console.log(get_bbox(JSON.stringify(wzlgGeoJson)))
+  // console.log(turf.bbox(wzlgGeoJson as any))
   console.log(`Calculation took ${performance.now() - time} ms`)
 }
 </script>
