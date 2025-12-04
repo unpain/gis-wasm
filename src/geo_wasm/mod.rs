@@ -1,1 +1,1 @@
-mod geo_wasm;
+mod bbox;
